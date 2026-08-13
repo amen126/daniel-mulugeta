@@ -1,0 +1,12 @@
+/* Final all-black luxury visual layer */
+:root{--cream:#050505;--black:#050505;--ink:#f4f0e7;--muted:#b8b2a7;--line:#ffffff2d}
+body,.about,.expertise,.project-showcase,.contact{background:#050505;color:#f4f0e7}
+.about-text strong,.about-text h2,.expertise h2,.showcase-heading h2,.contact h2{color:#fff}
+.hero{min-height:850px;background:#050505!important}
+.hero::before{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1619350917811-68769a5937e2?auto=format&fit=crop&w=2200&q=85') center/cover no-repeat;filter:grayscale(1) contrast(1.4);opacity:.24;content:''}
+.hero-overlay{background:radial-gradient(circle at 76% 46%,#c8943524,transparent 31%),linear-gradient(90deg,#050505f8 12%,#050505bc 57%,#050505df)!important}
+.hero-content::before{display:block;width:clamp(260px,30vw,390px);height:clamp(260px,30vw,390px);margin-bottom:28px;border-radius:50%;background:url('images/logo.png') center/cover no-repeat;box-shadow:0 0 0 2px #edc77888,0 0 120px #c8943566;content:''}
+.about-card{background:#11100f}.project-showcase{border-top:1px solid #ffffff17;border-bottom:1px solid #ffffff17}
+/* Make the opening logo unmistakable. */
+#loader img{width:250px;height:250px;box-shadow:0 0 0 2px #edc77888,0 0 90px #c8943544}
+@media(max-width:500px){.hero{min-height:840px}.hero-content::before{width:230px;height:230px}#loader img{width:210px;height:210px}}
